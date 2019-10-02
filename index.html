@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="assets/css/styling1.css">
+    <link rel="manifest" href="assets/js/manifest.json">
+    <title>Sols pollués</title>
+</head>
+
+<body>
+<header>
+    <h1> Les Zones<br/> Pollués</h1>
+</header>
+<div class="square"></div>
+<div class="square2"></div>
+    <div class="image1">
+        <img src="assets/images/dechet-toxique.jpg">
+    </div>
+    <div class="image2">
+        <img src="assets/images/pollution_des_sols_produits_alimentaire.jpg">
+    </div>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      <em>Enable Dark Mode!</em>
+    </div>
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+</script>
+
+</body>
+</html>
